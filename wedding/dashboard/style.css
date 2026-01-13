@@ -1,0 +1,190 @@
+/* General Body and Background */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif; /* Clean, modern font */
+    background: #eaf4ff; /* Light sky-blue background */
+    color: #1f3a5d; /* Dark navy text */
+}
+
+/* Header Styling */
+.admin-header {
+    background: linear-gradient(to right, #357abd, #4a90e2); /* Smooth blue gradient */
+    color: white;
+    font-size: 3.5em;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif; /* Elegant header font */
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(53, 122, 189, 0.3); /* Soft shadow for depth */
+    border-bottom: 4px solid #357abd; /* Blue line at the bottom */
+    border-radius: 0 0 20px 20px; /* Rounded bottom corners */
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 240px;
+    background: #2a3f5c; /* Rich dark navy */
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 3px 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 0 0 20px;
+}
+
+.sidebar button {
+    background: #4a90e2; /* Light blue for button */
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em; /* Larger font for buttons */
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    font-family: 'Roboto', sans-serif; /* Modern button font */
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.sidebar button:hover {
+    background: #357abd; /* Darker blue on hover */
+    transform: translateX(4px) scale(1.05);
+    box-shadow: 0 5px 15px rgba(53, 122, 189, 0.5); /* Enhanced shadow effect */
+}
+
+/* Content Area */
+.content {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow for content */
+}
+
+/* Heading in Content */
+h2 {
+    color: #357abd; /* Vibrant blue */
+    font-size: 2.5em; /* Larger heading size */
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse; /* remove space between cells */
+    margin-top: 30px;
+    background-color: #ffffff; /* White table background */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Light outer shadow */
+    border-radius: 12px;
+    overflow: hidden; /* smooth rounded corners */
+}
+
+/* Table Headers */
+thead {
+    background-color: #357abd; /* blue header */
+    color: white;
+}
+
+th {
+    padding: 18px 20px;
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}
+
+/* Table Body */
+tbody tr {
+    border-bottom: 1px solid #dddddd; /* light grey separator */
+}
+
+tbody tr:last-child {
+    border-bottom: none; /* no border for last row */
+}
+
+td {
+    padding: 16px 20px;
+    font-size: 1em;
+    color: #1f3a5d; /* dark text color */
+    font-weight: 500;
+}
+
+/* Hover Effect on Rows */
+tbody tr:hover {
+    background-color: #f1f7ff; /* very light blue hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Input Fields */
+input[type="text"] {
+    width: 100%;
+    border: 2px solid #357abd; /* Blue border */
+    background: transparent;
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 12px;
+    margin: 10px 0;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+input[type="text"]:focus {
+    background-color: #eaf4ff;
+    outline: none;
+    border-color: #4a90e2; /* Lighter blue on focus */
+    box-shadow: 0 0 12px rgba(74, 144, 226, 0.4); /* Soft glowing effect */
+}
+
+/* Action Buttons (Update, Delete) */
+.action-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.action-buttons button {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+}
+
+/* Update Button */
+.update {
+    background-color: #2b6cb0; /* Medium blue for update */
+}
+
+.update:hover {
+    background-color: #265a9a;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(43, 108, 176, 0.4); /* Soft blue shadow */
+}
+
+/* Delete Button */
+.delete {
+    background-color: #d64545; /* Keep delete red for contrast */
+}
+
+.delete:hover {
+    background-color: #b63b3b;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(182, 59, 59, 0.4); /* Darker red shadow */
+}

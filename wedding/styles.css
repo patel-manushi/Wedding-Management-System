@@ -1,0 +1,226 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;500&display=swap');
+
+/* Global Styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto for better readability */
+    margin: 0;
+    background-color: #e0f7fa; /* Light blue background */
+    background-image: url('path-to-your-image.jpg'); /* Optional: Add a background image */
+    background-size: cover;
+    background-position: center;
+    color: #2c3e50; /* Dark blue text color */
+    font-size: 18px;
+    line-height: 1.8;
+}
+.logo img {
+    height: 60px;
+  }
+  
+/* Header */
+header {
+    background: linear-gradient(135deg, rgba(30, 136, 229, 0.9), rgba(41, 121, 255, 0.9)); /* Soft blue gradient */
+    padding: 30px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background 0.4s ease; /* Smooth transition for background color on hover */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px; /* Adjusted padding for more space */
+}
+
+.navbar .logo {
+    font-size: 40px; /* Larger font for better visibility */
+    color: #fff;
+    font-family: 'Merriweather', serif; /* Elegant serif font for the logo */
+    letter-spacing: 2px; /* Added letter spacing for better legibility */
+}
+
+/* Navbar Links */
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase; /* Uppercase links for better readability and emphasis */
+    letter-spacing: 1px; /* Added spacing for an elegant look */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar ul li a:hover {
+    color:black;
+    transform: translateY(-4px); /* Subtle hover effect */
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 100px 40px;
+    background-image: url('../images/floral-bg.png'); /* Optional background image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about h2 {
+    font-size: 56px; /* Larger heading */
+    font-family: 'Merriweather', serif; /* Serif for headings */
+    margin-bottom: 20px;
+}
+
+.about h2 span {
+    color: #3498db; /* Blue color for the span */
+    font-weight: 700;
+}
+
+.about p {
+    max-width: 900px;
+    margin: 15px auto;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif; /* Roboto for readability */
+}
+
+.btn {
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #3498db; /* Blue button */
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 100px 40px;
+    background-color: #e0f7fa; /* Light blue background */
+
+}
+
+.services h2 {
+    font-size: 56px; /* Larger heading */
+    font-family: 'Merriweather', serif;
+}
+
+.services h2 span {
+    color: #3498db; /* Blue color for span */
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-card {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card h3 {
+    color: #3498db; /* Blue color for card headings */
+    font-size: 24px;
+    margin-bottom: 8px;
+    font-family: 'Merriweather', serif; /* Merriweather for card headings */
+}
+
+.service-card p {
+    font-size: 16px;
+    color: #555;
+    font-family: 'Roboto', sans-serif; /* Roboto for card content */
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, rgba(30, 136, 229, 0.9), rgba(41, 121, 255, 0.9)); /* Gradient background matching header */
+    color: #fff; /* Make all text in footer white */
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 -6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative;
+}
+
+/* Footer Highlight Strip */
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: rgba(52, 152, 219, 0.7); /* Blue highlight strip */
+}
+
+/* Footer Text */
+.footer-container p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff; /* Make footer text white */
+}
+
+/* Footer Links */
+.footer-container a {
+    color: #fff; /* White color for links */
+    text-decoration: none;
+    margin: 0 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase; /* Uppercase for footer links */
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+    color:black;
+}
+
+/* Footer Social Icons */
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    color: #fff; /* White color for social media icons */
+    font-size: 30px;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: black;
+}
